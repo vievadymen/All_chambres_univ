@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EtudiantsController!{% endblock %}
+{% block body %}
+<div class="row">
+          <div class="col-lg-12 formulaire">
+  <form id="form">
+
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Prénom</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="prenom" placeholder="prenom">
+      <small id="helpprenom" class="text-danger"></small>
+    </div>
+    
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Nom</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="nom" placeholder="nom">
+      <small id="helpnom" class="text-danger"></small>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-5">
+      <input type="text" name="email" class="form-control" id="email" placeholder="email">
+      <small id="helpemail" class="text-danger"></small>
+    </div>
+    <small id="p" class="text-danger"></small>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Tel</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="tel" placeholder="telephone">
+      <small id="helptel" class="text-danger"></small>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Adresse</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="adr" placeholder="adresse">
+      <small id="helpadr" class="text-danger"></small>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Date Naissance</label>
+    <div class="col-sm-5">
+      <input type="date" class="form-control" id="naiss" placeholder="date de naissance">
+      <small id="helpnaiss" class="text-danger"></small>
+    </div>
+  </div>
+  
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Type Bourse</label>
+    <div class="col-sm-5">
+  <select class="custom-select my-1 mr-sm-2" id="tbourse">
+    <option value="1">Bourse entière</option>
+    <option value="2">Demi bourse</option>
+  </select>
+  <small id="helptbourse" class="text-danger"></small>
+  </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Logement</label>
+    <div class="col-sm-5">
+  <select class="custom-select my-1 mr-sm-2" id="tlogmt">
+    <option value="1">Logé</option>
+    <option value="2">Non logé</option>
+  </select>
+  <small id="helptlogmt" class="text-danger"></small>
+  </div>
+  </div>
+
+  <div class="form-group row">
+  <div class="col-sm-5 submit">
+  <button class=" btn btn-primary "type="submit">Enregister</button>
+  </div>
+  </div>
+</form>
+</div>
+{% endblock %}

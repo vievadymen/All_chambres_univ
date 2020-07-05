@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello EtudiantsController!{% endblock %}
+{% block body %}
+<body>
+      <div class="row ">
+      <div class="col-lg-8  avanttab">
+
+  <div class="input-group searchbar">
+    <input type="text" class="form-control" placeholder="Rechercher...">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+  <button class="btn btn-primary ajout" id="ajout" type="button"> Ajouter etudiant</button>
+  </div> 
+</div>
+<div class="row">
+  <div class="col-lg-10 table">
+  <table class="">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nom</th>
+      <th scope="col">Prenom</th>
+      <th scope="col">Matricule</th>
+      <th scope="col">Bourse</th>
+      <th scope="col">Logement</th>
+      <th scope="col">Paramètres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Coly</td>
+      <td>Joseph</td>
+      <td>2020 CO JO  1000</td>
+      <td>BE</td>
+      <td>L</td>
+      <td>
+      <button class="btn btn-primary"><i class="fa fa-trash"></i></button>
+      <button class="btn btn-primary">
+      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      </button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Mendy</td>
+      <td>Vièva</td>
+      <td>2018 ME VI  1001</td>
+      <td>DB</td>
+      <td>NL</td>
+      <td>
+      <button class="btn btn-primary"><i class="fa fa-trash"></i></button>
+      <button class=" btn btn-primary">
+      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      </button>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Ndiaye</td>
+      <td>Daba</td>
+      <td>2018 ND DA  0701</td>
+      <td>NB</td>
+      <td>-</td>
+      <td>
+      <button class=" btn btn-primary"><i class="fa fa-trash"></i></button>
+      <button class=" btn btn-primary">
+      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+{% endblock %}

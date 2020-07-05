@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ChambreController!{% endblock %}
+
+{% block body %}
+  <div class="row">
+  <button class="btn btn-primary ajout" id="ajout" href="chambre/ajout_chambre" type="button"> Ajouter chambre</button>
+</div>
+  <div class="row">
+  
+  <div class="col-lg-10 table">
+  <table class="">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Numéro chambre</th>
+      <th scope="col">Numéro bâtiment</th>
+      <th scope="col">Type</th>
+      <th scope="col">Paramètres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">001</th>
+      <td>01</td>
+      <td>indiv</td>
+      <td><button class="btn-primary"><i class="fa fa-trash"></i></button>
+      <button class="btn-primary">
+      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      </button>
+    </td>
+    </tr>
+    <tr>
+      <th scope="row">003</th>
+      <td>03</td>
+      <td>a deux</td>
+      <td><button class="btn btn-primary"><i class="fa fa-trash"></i></button>
+      <button class="btn btn-primary">
+      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      </button>
+    </td>
+    </tr>
+    <tr>
+      <th scope="row">005</th>
+      <td>05</td>
+      <td>indiv</td>
+      <td><button class="btn btn-primary"><i class="fa fa-trash"></i></button>
+      <button class="btn btn-primary">
+      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      </button>
+    </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+{% endblock %}
