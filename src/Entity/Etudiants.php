@@ -42,10 +42,18 @@ class Etudiants
      */
     private $datenaiss;
 
+   
+    private $typebourse;
+
+    
+    private $logement;
+
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      */
     private $matricule;
+
+    
 
     public function getId(): ?int
     {
@@ -100,6 +108,30 @@ class Etudiants
         return $this;
     }
 
+    public function gettypebourse(): ?string
+    {
+        return $this->typebourse;
+    }
+
+    public function settypebourse(string $typebourse): self
+    {
+        $this->typebourse = $typebourse;
+
+        return $this;
+    }
+
+    public function getlogement(): ?string
+    {
+        return $this->logement;
+    }
+
+    public function setlogement(string $logement): self
+    {
+        $this->logement = $logement;
+
+        return $this;
+    }
+
     public function getDatenaiss(): ?\DateTimeInterface
     {
         return $this->datenaiss;
@@ -117,10 +149,12 @@ class Etudiants
         return $this->matricule;
     }
 
-    public function setMatricule(string $matricule): self
+    public function setMatricule(?string $matricule): self
     {
         $this->matricule = $matricule;
 
         return $this;
     }
+
+
 }

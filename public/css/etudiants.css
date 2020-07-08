@@ -1,0 +1,43 @@
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.table{
+    top:50px;
+    left: 25%;
+}
+.ajout{
+    float: right;
+}
+.searchbar{
+    width: 20%;
+   float: left;
+   left:8%;
+    /* left: 25%;
+    top: 20px;*/
+}
+.avanttab{
+ top: 25px;
+ left: 20%;
+}
+.formulaire{
+    top:50px;
+    left: 25%;
+    position: relative;
+}
+.col-sm-5{
+    position: relative;
+    left: 10%;
+}

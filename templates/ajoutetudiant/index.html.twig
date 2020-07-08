@@ -1,7 +1,20 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello EtudiantsController!{% endblock %}
+{% block title %}Ajout Etudiant!{% endblock %}
 {% block body %}
+{{form_start(form)}}
+
+{{form_row(form.nom, {'attr':{'placeholder': 'Nom...'}})}}
+{{form_row(form.prenom, {'attr':{'placeholder': 'Prenom...'}})}}
+{{form_row(form.tel, {'attr':{'placeholder': 'Telephone...'}})}}
+{{form_row(form.email, {'attr':{'placeholder': 'Email...'}})}}
+{{form_row(form.datenaiss, {'attr':{'placeholder': 'Date da naissance...'}})}}
+{{form_row(form.typebourse)}}
+{{form_row(form.logement)}}
+<input type="submit" value="Enregistrer"/>
+{{form_end(form)}}
+
+<!--
 <div class="row">
           <div class="col-lg-12 formulaire">
   <form id="form">
@@ -79,4 +92,5 @@
   </div>
 </form>
 </div>
+-->
 {% endblock %}

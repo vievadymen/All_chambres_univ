@@ -1,5 +1,5 @@
 {% extends 'base.html.twig' %}
-
+ {% block stylesheets %}<link rel="stylesheet" href="{{asset('css/etudiants.css')}}">{% endblock %}
 {% block title %}Hello EtudiantsController!{% endblock %}
 {% block body %}
 <body>
@@ -14,7 +14,6 @@
       </button>
     </div>
   </div>
-  <button class="btn btn-primary ajout" id="ajout" type="button"> Ajouter etudiant</button>
   </div> 
 </div>
 <div class="row">
